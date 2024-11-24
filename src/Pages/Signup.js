@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -11,19 +12,19 @@ const Signup = () => {
         </h1>
         <p className="mt-2 text-sm">
           <span className="text-primaryText">Already have an account? </span>
-          <a href="/login" className="text-main hover:underline">
+          <Link to="/login" className="text-main hover:underline">
             Login
-          </a>
+          </Link>
         </p>
       </div>
 
       {/* Form */}
-      <form className="w-[25%] max-w-sm bg-white p-6 rounded-lg shadow-md">
+      <form className="w-[30%] max-w-sm bg-white p-6 rounded-lg shadow-md">
         {/* First Name */}
         <div className="mb-4">
           <label
             htmlFor="firstName"
-            className="block text-primaryText font-medium mb-1 text-left"
+            className="block text-primaryText font-medium mb-1 text-left text-sm"
           >
             First Name
           </label>
@@ -31,7 +32,7 @@ const Signup = () => {
             type="text"
             id="firstName"
             placeholder="Enter your first name"
-            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400"
+            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400 text-sm"
           />
         </div>
 
@@ -39,7 +40,7 @@ const Signup = () => {
         <div className="mb-4">
           <label
             htmlFor="lastName"
-            className="block text-primaryText font-medium mb-1 text-left"
+            className="block text-primaryText font-medium mb-1 text-left text-sm"
           >
             Last Name
           </label>
@@ -47,7 +48,7 @@ const Signup = () => {
             type="text"
             id="lastName"
             placeholder="Enter your last name"
-            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400"
+            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400 text-sm"
           />
         </div>
 
@@ -55,7 +56,7 @@ const Signup = () => {
         <div className="mb-4">
           <label
             htmlFor="phoneNumber"
-            className="block text-primaryText font-medium mb-1 text-left"
+            className="block text-primaryText font-medium mb-1 text-left text-sm"
           >
             Phone Number
           </label>
@@ -63,7 +64,7 @@ const Signup = () => {
             type="text"
             id="phoneNumber"
             placeholder="Enter your phone number"
-            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400"
+            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400 text-sm"
           />
         </div>
 
@@ -71,7 +72,7 @@ const Signup = () => {
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block text-primaryText font-medium mb-1 text-left"
+            className="block text-primaryText font-medium mb-1 text-left text-sm"
           >
             Email
           </label>
@@ -79,7 +80,7 @@ const Signup = () => {
             type="email"
             id="email"
             placeholder="Enter your email"
-            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400"
+            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400 text-sm"
           />
         </div>
 
@@ -87,7 +88,7 @@ const Signup = () => {
         <div className="mb-6">
           <label
             htmlFor="password"
-            className="block text-primaryText font-medium mb-1 text-left"
+            className="block text-primaryText font-medium mb-1 text-left text-sm"
           >
             Password
           </label>
@@ -95,7 +96,7 @@ const Signup = () => {
             type="password"
             id="password"
             placeholder="Enter your password"
-            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400"
+            className="w-full p-2 border border-main rounded focus:outline-none focus:ring-2 focus:ring-main placeholder-gray-400 text-sm"
           />
         </div>
 
