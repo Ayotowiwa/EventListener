@@ -16,15 +16,20 @@ const EventHub = () => {
   return (
     <div className="w-full">
       {/* Header Section */}
-      <div className="w-full bg-main-color py-4 flex items-center justify-between px-8">
-        {/* Search Bar */}
-        <input
-          type="text"
-          placeholder="Search event type"
-          className="h-10 w-1/3 px-4 text-sm placeholder-gray-400 text-primary-text-color border border-gray-300 rounded"
-        />
+      <div className="w-full py-4 flex flex-col md:flex-row items-center justify-between px-8 space-y-4 md:space-y-0">
+        {/* Search Bar & Button */}
+        <div className="flex items-center space-x-2 w-full md:w-2/3">
+          <input
+            type="text"
+            placeholder="Search event type"
+            className="h-10 w-full px-4 text-sm placeholder-gray-400 text-primary-text-color border border-gray-300 rounded"
+          />
+          <button className="h-10 px-6 text-sm text-white bg-main rounded">
+            Search
+          </button>
+        </div>
         {/* Location */}
-        <button className="h-10 w-1/4 px-4 text-sm text-gray-400 bg-white rounded flex items-center justify-center">
+        <button className="h-10 px-4 text-sm text-gray-400 bg-white rounded flex items-center justify-center w-full md:w-1/4">
           <span className="material-icons-outlined text-lg mr-2">location_on</span>
           Toronto
         </button>
